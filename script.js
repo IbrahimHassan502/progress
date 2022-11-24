@@ -3,14 +3,14 @@ const lessonArr = [
   {
     index: 0,
     name: "Intro & What Is WordPress?",
-    done: true,
-    progress: 25,
+    done: false,
+    progress: 0,
   },
   {
     index: 1,
     name: "Knowledge And Tools That I Need",
-    done: true,
-    progress: 50,
+    done: false,
+    progress: 0,
   },
   {
     index: 2,
@@ -25,11 +25,14 @@ const lessonArr = [
     progress: 0,
   },
 ];
-window.localStorage.setItem("lessons", JSON.stringify(lessonArr));
+if (!window.localStorage.getItem("lessons")) {
+  window.localStorage.setItem("lessons", JSON.stringify(lessonArr));
+}
+// window.localStorage.clear();
 /* ==========================
 ========= global variables
 =============================*/
-const lessons = JSON.parse(window.localStorage.getItem("lessons"));
+const lessons = JSON.parse(window.localStorage.getItem("lessons")) || lessonArr;
 let doneCount = window.localStorage.getItem("doneCount");
 let donePercentage = (doneCount / lessons.length) * 100;
 console.log(lessons);
