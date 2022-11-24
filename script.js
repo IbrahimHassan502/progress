@@ -1,31 +1,31 @@
 "use strict";
-// const lessonArr = [
-//   {
-//     index: 0,
-//     name: "Intro & What Is WordPress?",
-//     done: true,
-//     progress: 25,
-//   },
-//   {
-//     index: 1,
-//     name: "Knowledge And Tools That I Need",
-//     done: true,
-//     progress: 50,
-//   },
-//   {
-//     index: 2,
-//     name: "WordPress.Com vs WordPress.Org",
-//     done: false,
-//     progress: 0,
-//   },
-//   {
-//     index: 3,
-//     name: "Setup WordPress On WordPress.Com",
-//     done: false,
-//     progress: 0,
-//   },
-// ];
-// window.localStorage.setItem("lessons", JSON.stringify(lessonArr));
+const lessonArr = [
+  {
+    index: 0,
+    name: "Intro & What Is WordPress?",
+    done: true,
+    progress: 25,
+  },
+  {
+    index: 1,
+    name: "Knowledge And Tools That I Need",
+    done: true,
+    progress: 50,
+  },
+  {
+    index: 2,
+    name: "WordPress.Com vs WordPress.Org",
+    done: false,
+    progress: 0,
+  },
+  {
+    index: 3,
+    name: "Setup WordPress On WordPress.Com",
+    done: false,
+    progress: 0,
+  },
+];
+window.localStorage.setItem("lessons", JSON.stringify(lessonArr));
 /* ==========================
 ========= global variables
 =============================*/
